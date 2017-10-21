@@ -17,7 +17,7 @@ EM.run do
   ws = Faye::WebSocket::Client.new(url)
 
   #  接続が確立した時の処理
-ws.on :open do
+  ws.on :open do
     p [:open]
   end
 
@@ -25,10 +25,19 @@ ws.on :open do
     data = JSON.parse(event.data)
     p [:message, data]
 
-    if data['text'] == 'こんばんは'
+    if data['text'] == 'hello'
       ws.send({
         type: 'message',
-        text: "こんばんは <@#{data['user']}> さん",
+        text: "こんにちは <@#{data['user']}> さん",
+        channel: data['channel']
+        }.to_json)
+    end
+
+    if data['text'] == 'day'
+      t = Time.now
+      ws.send({
+        type: 'message',
+        text: "きょうは#{t.year}ねん#{t.month}がつ#{t.day}にち",
         channel: data['channel']
         }.to_json)
     end
