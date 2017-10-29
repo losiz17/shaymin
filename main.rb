@@ -1,4 +1,3 @@
-# test.rb
 require 'http'
 require 'json'
 require 'eventmachine'
@@ -7,8 +6,7 @@ require 'uri'
 require 'openssl'
 require 'net/http'
 
-puts "APIKEY =>"
-APIKEY = gets.chomp
+APIKEY = ENV['APIKEY']
 uri = URI.parse("https://api.apigw.smt.docomo.ne.jp/dialogue/v1/dialogue?APIKEY=#{APIKEY}")
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
@@ -44,7 +42,6 @@ EM.run do
         channel: data['channel']
         }.to_json)
     end
-
     if data['text'] == 'day'
       t = Time.now
       ws.send({
