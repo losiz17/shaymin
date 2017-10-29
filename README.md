@@ -2,7 +2,7 @@
 bot on slack
 
 ## 使用言語
-・　ruby 2.4.2
+* ruby 2.4.2
 
 ## setting
 1. slackでbotを作成してAPI Tokenを取得する
