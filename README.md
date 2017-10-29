@@ -9,6 +9,6 @@ bot on slack
 2. 取得したTokenを環境変数として保存
 
 `$export SLACK_API_TOKEN=ここに入れる`
-3.docomo developerで雑談対話のapi keyを取得する
-4.取得したapi keyを環境変数として保存
+3.　docomo developerで雑談対話のapi keyを取得する
+4.　取得したapi keyを環境変数として保存
 `$export APIKEY=ここに入れる`
