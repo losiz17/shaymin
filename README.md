@@ -1,10 +1,12 @@
-# shaymin
-bot on slack
+## About shaymin
+* bot on slack
 
 ## 使用言語
+
 * ruby 2.4.2
 
 ## setting
+
 1.slackでbotを作成してAPI Tokenを取得する
 
 2.取得したTokenを環境変数として保存
@@ -14,3 +16,8 @@ bot on slack
 
 4.取得したapi keyを環境変数として保存
 `$export APIKEY=ここに入れる`
+
+## Usage
+
+
+
