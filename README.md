@@ -5,7 +5,7 @@
 
 * ruby 2.4.2
 
-## setting
+## Setting
 
 1.slackでbotを作成してAPI Tokenを取得する
 
