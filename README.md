@@ -19,6 +19,4 @@
 
 ## How cute
 
-![image](https://user-images.githubusercontent.com/27879820/53806905-8d9a0580-3f91-11e9-9e2e-d7edeb15fdce.png)
-
-
+<img src="https://user-images.githubusercontent.com/27879820/53806905-8d9a0580-3f91-11e9-9e2e-d7edeb15fdce.png" width=50%>
